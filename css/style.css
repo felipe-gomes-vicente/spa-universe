@@ -13,6 +13,12 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  max-height: 100%;
+  background-image: url('../images/mountains-universe-1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .hide {
@@ -28,6 +34,34 @@ nav {
 }
 
 nav a{
+  color: #E1E1E6;
   font-size: 2.4rem;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17.2rem;
+  gap: 24px;
+}
+
+.home-page h1 {
+  color: #E1E1E6;
+  font-weight: bold;
+  font-size: 4.8rem;
+}
+
+.home-page button {
+  color: #FFF;
+  font-size: 1.4rem;
+  padding: 1.2rem 3.2rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
 }
