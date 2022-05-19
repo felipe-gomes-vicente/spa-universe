@@ -25,6 +25,14 @@ body {
   display: none;
 }
 
+.universe {
+  background-image: url('../images/mountains-universe-2.svg');
+}
+
+.exploration {
+  background-image: url('../images/mountains-universe-3.svg');
+}
+
 nav {
   display: flex;
   align-items: center;
