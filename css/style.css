@@ -10,16 +10,7 @@
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  max-height: 100%;
-  background-image: url('../images/mountains-universe-1.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
+
 
 .hide {
   display: none;
@@ -34,19 +25,30 @@ body {
   background-image: url('../images/mountains-universe-3.svg');
 }
 
-body.home a:nth-child(2) {
+body.home a:nth-child(1) {
   font-weight: 700;
   color: #FFF;
 }
 
-body.universe a:nth-child(3) {
+body.universe a:nth-child(2) {
   font-weight: 700;
   color: #FFF;
 }
 
-body.exploration a:nth-child(4) {
+body.exploration a:nth-child(3) {
   font-weight: 700;
   color: #FFF;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  max-height: 100%;
+  background-image: url('../images/mountains-universe-1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 nav {
@@ -54,12 +56,13 @@ nav {
   align-items: center;
   justify-content: flex-start;
   padding: 4rem 7.2rem;
-  gap: 32px;
+  font-size: clamp(1rem , 1.4rem + 1vw, 2.4rem);
+  
 }
 
-nav a{
+nav ul a {
   color: #E1E1E6;
-  font-size: 2.4rem;
+  margin-left: 10px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -83,7 +86,7 @@ nav a:hover {
 .home-page h1 {
   color: #E1E1E6;
   font-weight: bold;
-  font-size: 4.8rem;
+  font-size: clamp(3.8rem, 3.4rem + 1vw, 6rem);
 }
 
 .home-page .btn-home {
@@ -106,7 +109,9 @@ nav a:hover {
 .universe-page, 
 .exploration-page {
   color: #E1E1E6;
-  margin: 6.3rem 10.2rem 0;
+  margin-top: 6.3rem;
+  padding-left: 10.2rem;
+  padding-right: 2rem;
 }
 
 .universe-page h1, 
@@ -119,4 +124,33 @@ nav a:hover {
 .exploration-page p {
   margin-top: 1.6rem;
   font-size: 1.8rem;
+  max-width: 64.8rem;
 }
+
+@media (max-width: 484px) {
+  nav {
+    justify-content: center;
+    padding: 4rem 2.2rem;
+    font-size: small;
+  }
+
+  .universe-page, 
+  .exploration-page {
+    margin-top: 6.3rem;
+    padding-left: 10.2rem;
+    padding-right: 2rem;
+  }
+
+
+  .universe-page h1, 
+  .exploration-page h1 {
+  font-size: 4rem;
+  }
+
+
+  .universe-page p, 
+  .exploration-page p {
+    font-size: 1.4rem;
+  }
+}
+
