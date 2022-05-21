@@ -57,7 +57,7 @@ nesse projeto, com as aulas:
 <br />
 
 - [EXPLORER - Rocketseat](https://www.rocketseat.com.br/explorer)
-- [Figma do Projeto - Focus Timer Dark](https://www.figma.com/file/fWDqeHD7LozcLUQFGU7ItC/Stage-05---Dark-Mode-FocusTimer-(Copy))
+- [Figma do Projeto - SPA Universe](https://www.figma.com/file/YyhN52gLNXlFCslwDNO1BL/%5BDesafios-Explorer%5D-SPA-Universe-(Copy))
 
 ## Imagem do Projeto concluído:
  <img alt="Print do projeto SPA Universe" title=" Landing page" src="./images/spa-universe.png" />
